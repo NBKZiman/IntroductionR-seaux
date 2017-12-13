@@ -2,12 +2,12 @@ before_install:
 - sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng texlive-lang-french latexmk latex-beamer
 script:
 - mkdir _build
-- latexmk -pdf -output-directory=_build -jobname=introduction Introductioon.tex
+- latexmk -pdf -output-directory=_build -jobname=introduction Introduction.tex
 deploy:
   provider: releases
   api_key:
     secure: Qu58s4fU1K7BnVmBalbnWlLWOMuzjknkWs5+3eXEDaERn0zzwS8FFczwhRgTxFwUIgsjGzI4FWOwR8BBls+5qCrLPJikqFysIFVHv2/qm+yucWkWfT7u5p8xU+nd8cHWNTAzr6epYjP9mp/agE2ttht63O/aZDmvcxK6+D+FZJR6EyIh6Ic7QN617ZZ4HgAZGAIsZlErH1C4fO48PO95uUdiXuI8Ln4+qhfGEBL/Owc8QKoJKzwCMNbJeweslqgxOKpIw0HpajpnDAvDsOGNkGsPTtwIXcOG7z0krlf0RHByqw0TwD4Y1geIvVP7793wJJNwedkpfujL8eFlsSQoTshxlqiC8wS7gnodFcGdVytqWI7XdRmNi6s6ybRnSrKXEtI2u5WLuiJQhnxockGmLoa8LNwNH28ocj2dfU+wMrlv3gFMhbSbzL+J5Y5h2mbXBADOSySCLNWt5e8k/3PDQsgiORfAGE7VKyn8B4fZiEO8Iq1l1Qm+5CmrmEXf7ZWsek2OTZGMnh+7YRgjHOUaqlqgUfadXlJ74LJkHRfmRcKoSI5c/yoN9Hr9ZSO4rQyTj9usaEQz7QCU5vzeOrq1G2ulATiI5aYVpxNK6XVGgs5+eH9kgmJ5nb3jfJ5Yu+AOxsbwslfeTlriFwo7oMlWOjuaDwYEbCX2q8jDQUU7oGc=
-  file: Introductioon.pdf
+  file: Introduction.pdf
   skip_cleanup: true
   on:
     repo: NBKZiman/IntroductionR-seaux
